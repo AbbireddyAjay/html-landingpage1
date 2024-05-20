@@ -1,0 +1,220 @@
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+  }
+  section{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    flex-direction:column;
+    justify-content: flex-start;
+    background-image:url(pic1.jpeg);
+    background-size:cover;
+    background-position:center;
+  }
+  header{
+    background-color: rgba(40, 177, 201, 0.0);
+    border:5px solid white;
+    position:relative;
+    top:0;
+    width:100%;
+    padding: 25px;px 100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  
+  header.navbar a{
+    color:#000;
+    background-color: #fff;
+    text-decoration: none;
+    font-weight: 500px;
+    letter-spacing: 1px;
+    padding:2px 15px;
+    transition-property:background;
+  }
+  header .navbar a:not(:last-child){
+    margin-right: 30px;
+
+  }
+  .content{
+    max-width: 760px;
+    margin:60px 
+}
+#he1{
+    color:#226A80;
+    font-size:35px;
+    font-weight:800;
+    letter-spacing: 0px;
+    line-height: 60px;
+    margin-bottom:30px;
+  }
+  #he4{
+    color:white;
+    font-size:35px;
+    font-weight:600;
+  }
+  .content.info p{
+    font-size :5px;
+  }
+  .content .info-btn{
+    color:#fff;
+    background-color: #226A80;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-weight:700px;
+    letter-spacing: 1px;
+    padding:10px 20px;
+    border-radius:5px;
+    transition:0.3s;
+    transition-property:background;
+   
+  }
+
+
+  .content .info-btn:hover{
+    background:#fff ;
+    align-items:center;
+  }
+  .media-icons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+  }
+  
+  .media-icons a{
+    font-size: 30px;
+    margin:30px;
+    position:relative;
+    color:rgb(9, 39, 53);
+    transition:0.3s;
+    transition-property: transform;
+  }    
+  .media-icons a:not(:last-child){
+    margin-right: 60px;
+  }
+  .media-icons a:hover{
+    transform:scale(1.5);
+
+  }
+ .content .info p{
+    color:white;
+    font-size:19px;
+    width:70wh;
+    margin-bottom:100px;
+  }
+  label{
+    display:none;
+
+  }
+  #check{
+    z-index: 3;
+  }
+  @media(max-width:960px){
+    header .navbar{
+      display:none;
+    }
+    label{
+      display:block;
+      font-size:25px;
+      cursor:pointer;
+      transition:0.3s;
+      transition-property: color;
+    }
+    label:hover{
+      color:#fff
+    }
+    label .close-btn{
+      display:none;
+    }
+    #check:checked ~ header .navbar{
+      z-index: 2;
+      position:fixed;
+      background-color: #887bb0c5;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+    }
+    #check:checked ~ header .navbar a{
+      font-weight:700;
+      margin-right:0;
+      font-size: 19px;
+      margin-bottom: 50px;
+      letter-spacing:2px;
+      
+    }
+    #check:checked ~ header label .menu-btn{
+      display:none;
+    }
+    #check:checked  ~ header label .close-btn{
+      z-index : 2;
+      display: block;
+      position:fixed;
+    }
+    label .menu-btn{
+      position:absolute;
+    }
+    header .logo{
+      position: absolute;
+      bottom: 5px;
+
+    }
+
+    .content .info h2{
+      font-size:45px;
+      line-height:50px;
+    }
+    content .info h2 span{
+      font-size:40px;
+      font-weight:600;
+    }
+    .content .info p{
+      font-size :14px;
+    }
+  }
+  @media(max-width:560px){
+    .content .info h2{
+      font-size:35px;
+      line-height:40px;
+    }
+    content .info h2 span{
+      font-size:30px;
+      font-weight:600;
+    }
+    .content .info p{
+      font-size :14px;
+    }
+  }
+
+  .ew{
+    
+    border-radius:5;
+    color:white;
+    font-weight: 900;
+    text-decoration: none;
+    height:30px;
+    width:90px;    
+  }
+  header a{
+    color:white"
+  }
+  header.logo{
+    position:relative;
+    color:#000;
+    font-size:90px;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight:800;
+    letter-spacing:1px;
+    align-items: center;
+  }
